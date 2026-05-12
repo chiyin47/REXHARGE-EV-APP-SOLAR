@@ -17,7 +17,7 @@ export default function Insights() {
 
       <View style={{ borderRadius: 16, padding: 12, backgroundColor: isDark ? '#052e2a' : '#fff', marginBottom: 12 }}>
         <Text style={{ color: isDark ? '#9eead6' : '#065f46', fontWeight: '700' }}>Monthly Savings (est.)</Text>
-        <BarChart data={{ labels: ['J','F','M','A','M','J','J','A','S','O','N','D'], datasets: [{ data: monthly }] }} width={width - 40} height={160} fromZero chartConfig={{ backgroundGradientFrom: isDark ? '#021511' : '#ffffff', backgroundGradientTo: isDark ? '#021511' : '#ffffff', decimalPlaces: 0, color: (opacity = 1) => `rgba(37, 99, 235, ${opacity})`, labelColor: (opacity = 1) => (isDark ? `rgba(183, 249, 214, ${opacity})` : `rgba(6, 78, 59, ${opacity})`) }} style={{ borderRadius: 12, marginTop: 8 }} />
+        <BarChart data={{ labels: ['J','F','M','A','M','J','J','A','S','O','N','D'], datasets: [{ data: monthly }] }} width={width - 40} height={160} fromZero yAxisLabel="$" yAxisSuffix="" chartConfig={{ backgroundGradientFrom: isDark ? '#021511' : '#ffffff', backgroundGradientTo: isDark ? '#021511' : '#ffffff', decimalPlaces: 0, color: (opacity = 1) => `rgba(37, 99, 235, ${opacity})`, labelColor: (opacity = 1) => (isDark ? `rgba(183, 249, 214, ${opacity})` : `rgba(6, 78, 59, ${opacity})`) }} style={{ borderRadius: 12, marginTop: 8 }} />
       </View>
 
       <View style={{ borderRadius: 16, padding: 12, backgroundColor: isDark ? '#052e2a' : '#fff' }}>
