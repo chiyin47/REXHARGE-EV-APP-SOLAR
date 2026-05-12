@@ -1,1 +1,1 @@
-# REXHARGE-EV-APP-SOLAR
+run with npx expo start
